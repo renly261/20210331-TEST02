@@ -12,9 +12,10 @@ function MM_popupMsg(msg) { //v1.0
 
 <body>
 <marquee>謝謝蒞臨本網站，請給予我們支持、鼓勵與建言。</marquee>
-<p><span style="color:red;font-weight:bolder">現在位置：首頁＞訪客留言</span></p>
+<p><span style="color:#f00;font-weight:bolder">現在位置：首頁＞訪客留言</span></p>
+
 <form>
-<table border="1" align="center" cellpadding="2" cellspacing="0" bordercolor="#DDDDDD">
+<table border="1" align="center" cellpadding="2" cellspacing="0" bordercolor="#ddd">
   <tr>
     <td width="120" align="center">姓名</td>
     <td width="580"><label for="textfield"></label>
@@ -27,7 +28,7 @@ function MM_popupMsg(msg) { //v1.0
   </tr>
   <tr>
     <td width="120" align="center">性別</td>
-    <td width="580"><input name="radio" type="radio" id="radio" value="radio" checked/>男
+    <td width="580"><input name="radio" type="radio" id="radio" value="radio" checked="checked" />男
       <label for="radio">
         <input type="radio" name="radio" id="radio2" value="radio" />女
       </label></td>
@@ -48,7 +49,8 @@ function MM_popupMsg(msg) { //v1.0
       <textarea name="textarea" id="textarea" cols="78" rows="10"></textarea></td>
   </tr>
   <tr>
-    <td width="120" align="center"><input name="button" type="submit" id="button" onclick="MM_popupMsg('歡迎蒞臨本網站，您的寶貴意見我們會儘速處理與回覆，謝謝！')" value="送出" />
+    <td width="120" align="center">
+      <input name="button" type="submit" id="button" onclick="MM_popupMsg('歡迎蒞臨本網站，您的寶貴意見我們會儘速處理與回覆，謝謝！')" value="送出" />
       <input type="reset" name="button2" id="button2" value="重寫" /></td>
     <td width="580">&nbsp;</td>
   </tr>
